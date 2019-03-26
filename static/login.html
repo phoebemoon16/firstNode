@@ -1,0 +1,52 @@
+<!-- <html>
+<body>
+    <h1>1111111111111111111111111</h1>
+    <img src="view.jpg"/>
+</body>
+</html> -->
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>小会会的第一个node项目</title> 
+<style>
+body {
+    background-color: #ccc;
+}
+.back {
+   width:100%;
+   height:50%;
+   margin-top:200px;
+   background-image: url('/images/view.jpg');
+   display: flex;
+   align-items: center;
+
+}
+.login {
+    color:white;
+    /* display: flex; */
+}
+
+.content {
+    display: flex;
+}
+</style>
+</head>
+<body>
+<div class="back">
+    <div class="login">
+        <h4>登录</h4>
+        <div class="content">
+            <form action="http://127.0.0.1:3000/test/process_get" method="GET"">
+                userName: <input type="text" name="userName">  <br>
+                
+                passWord: <input type="text" name="passWord">
+                <input type="submit" value="login">
+            </form>
+            <!-- 实现提交 不带资料提交 -->
+            <form style="margin: 25px 10px;" action="http://127.0.0.1:3000/test/secondImg" method="GET">
+                <input type="submit" value="regin">
+            </form>
+        </div>
+    </div>
+<div>
+</body>
